@@ -119,7 +119,7 @@ def filter_tweet_data(tweet_data_list):
 
 
 # NO NEED TO EDIT BELOW THIS LINE, FEEL FREE TO MAKE CHANGES BUT BE CAREFUL
-# Any "TODO" below this line marks areas where you can uncomment print statements for debugging (feel free to add your own)
+# Any "INFO" below this line marks areas where you can uncomment print statements for debugging (feel free to add your own)
 
 def pretty_print(data):
     pp = pprint.PrettyPrinter(indent=4)
@@ -220,7 +220,7 @@ def process_tweet_log_file(tweet_filepath):
         tweet_json = json.loads(tweet_line)
         extracted_tweet_data = extract_data_from_tweet_json(tweet_json)
         processed_tweet_data.append(extracted_tweet_data)
-        # TODO: uncomment below if you want to see the original tweets that were processed (good for debugging)
+        # INFO: uncomment below if you want to see the original tweets that were processed (good for debugging)
         # pretty_print(extracted_tweet_data)
     tweet_log_file.close()
     return processed_tweet_data
@@ -234,10 +234,10 @@ def process_tweet_log_files(list_of_tweet_log_paths):
     for tweet_log_file_path in list_of_tweet_log_paths:
         processed_tweet_data = process_tweet_log_file(tweet_log_file_path)
         filtered_tweet_data = filter_tweet_data(processed_tweet_data)
-        # TODO: uncomment below if you want to see the filtered tweets that were processed (good for debugging)
+        # INFO: uncomment below if you want to see the filtered tweets that were processed (good for debugging)
         # for tweet_data in filtered_tweet_data:
         #     pretty_print(tweet_data)
-        # TODO: uncomment below if you want to see the size difference between the original and filtered lists (good for debugging)
+        # INFO: uncomment below if you want to see the size difference between the original and filtered lists (good for debugging)
         # print("{file}: size of original tweet data: {size}".format(file=tweet_log_file_path, size=len(processed_tweet_data)))
         # print("{file}: size of filtered tweet data: {size}".format(file=tweet_log_file_path, size=len(filtered_tweet_data)))
         clean_and_processed_tweet_data.extend(filtered_tweet_data)
