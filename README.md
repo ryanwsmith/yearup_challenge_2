@@ -1,8 +1,10 @@
-# Yearup Challenge 2: Python
-
 # Main Challenge: Generate Twitter CVE Metrics
 
 ## Overview
+Get ready to have some fun with data and explore how we can process it using Python!
+
+This challenge may look a little daunting, but just have fun with it and do what you can using the starter code provided.
+
 The goal of this challenge is to generate a number of metrics from Twitter CVE data similar to what we saw used the last challenge.
 
 In this challenge there's a full month of data, each day in it's own file in the [data/yearup folder](data/yearup_challenge/)
