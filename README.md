@@ -13,14 +13,14 @@ There is also a framework for a simple report generator and example metrics func
 
 For the bonus challenge, this program will also write out a CSV file "twitter_data.csv" to the current directory
 
-:information_source: **Tips** 
+:information_source:  **Tips** 
 - use Python3 to run yearup_challenge2.py (python3 yearup_challenge2.py)
 - run yearup_challenge2.py from inside it's current directory (otherwise you'll have trouble accessing the data)
 
 
 ## Main Challenge: Metrics
 
-:information_source: Places were you need to make updates are marked with TODO in the comments, anything marked with "INFO" comments are optional for debugging
+:information_source:   Places were you need to make updates are marked with TODO in the comments, anything marked with "INFO" comments are optional for debugging
 
 1. First, I need your help fixing the _filter_tweet_data_ function by adding some code [here](https://github.com/ryanwsmith/yearup_challenge_2/blob/a79b4a30e763400131c30582bb41da18690716ee/yearup_challenge2.py#L113-L116)
 2. Next, I need you to update _print_tweet_data_metrics_ function by writing new functions to compute the metrics and adding a call to that code [here](https://github.com/ryanwsmith/yearup_challenge_2/blob/a79b4a30e763400131c30582bb41da18690716ee/yearup_challenge2.py#L103)
@@ -48,13 +48,13 @@ Feel free to get creative and add any additional metrics you like.  If you get R
 
 Be sure to review an [example of the extracted tweet data](https://github.com/ryanwsmith/yearup_challenge_2/blob/a79b4a30e763400131c30582bb41da18690716ee/yearup_challenge2.py#L150-L166) to help you find the data you'll need
 
-:warning: notice that I've marked a comment _"# NO NEED TO EDIT BELOW THIS LINE, FEEL FREE TO MAKE CHANGES BUT BE CAREFUL"_
+:warning:  Notice that I've marked a comment _"# NO NEED TO EDIT BELOW THIS LINE, FEEL FREE TO MAKE CHANGES BUT BE CAREFUL"_
 As this says, everything below is starter code and there should be no **need** to update it, but you're welcome to make changes if you like.
 
 
 ## Bonus Challenge: SQL
 
-:warning: This bonus challenge may be quite difficult and I haven't had the time to provide any starter code for it, check back and I may provide some tips later this week.
+:warning:   This bonus challenge may be quite difficult and I haven't had the time to provide any starter code for it, check back and I may provide some tips later this week.
 We may also have a chance to do some demos on Thursday.
 
 ## Your Challenge
@@ -65,8 +65,7 @@ Use the csv file generated twitter_data.csv
 - **Option 2:** If you have access to an AWS account, you could also setup a free-tier RDS instance.
 - **Option 3:** Setup a SQL database on your laptop (e.g. mysql, sqlite) create a new database and table, then load data from the CSV file to run SQL commands on the data
 
-:warning: 
-- If you choose option #1 with Athena be sure to gzip the CSV file (gzip twitter_data.csv) before uploading it to S3 to save on any costs.  This will reduce it from ~16MB -> ~3MB, so each Athena query should only cost about 2 cents 
+:warning:  If you choose option #1 with Athena be sure to gzip the CSV file (gzip twitter_data.csv) before uploading it to S3 to save on any costs.  This will reduce it from ~16MB -> ~3MB, so each Athena query should only cost about 2 cents 
 
 ## Beyond the Challenge
 
