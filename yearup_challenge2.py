@@ -113,8 +113,8 @@ def filter_tweet_data(tweet_data_list):
         # "append" tweet to filtered_list if tweet_cve is not equal to '' (blank)
         # TODO: add your code here to "append" ONLY valid _tweets_ to the filtered_list
         #       (be sure to append the full tweet, not tweet_cve)
-
-
+        if tweet_cve != '':
+            filtered_list.append(tweet)
     return filtered_list
 
 
